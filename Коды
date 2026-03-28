@@ -1,0 +1,119 @@
+//Funcsii i metody/ srezy i indexy
+False-эквалиентность 0
+True-эквалиентность 1
+numbers=[2,4,6,3]
+numbers[3]=100 - Делает 3ий индекс 100
+numbers.append(100)-Добавляет 100 в конец списка
+numbers.insert(1,True)-Добавляет Тру как первый индекс и просто движет элемент 1 на 2
+numbers.extend(112,31,434)-Добавляет полный список элементов
+numbers.sort()-сортирует по росту
+numbers.reserve()-с зада на перед
+numbers.pop(0)-Удаляет по индексу если не передать просто последний удаляет
+numbers.remove(True)-удаляет по значению 
+numbers.clear()- Чистит весь список 
+numbers.count()-Подсчитывает кол-во определенных элементов 
+len(numbers)-Длина списка, сколько там элеметнов
+for i in nums:
+el *= 2
+print(el)
+word='lolopito'
+print(word.count('l'))-число элементов
+print(len(word))-длинна сколько эл
+print(word.upper/lower())-бас арып кишы арып
+print(word.isupper())-это большое?
+print(word.capitalize())-Бырыншы арыпы бас арып
+print(word.find('l'))-Найти сколько л
+print(word.split(','))-razbit , аркылы
+print(word[0:4]/[4:-1]-(Poslednii skipaem))/lolo-srezy
+word.split()-pazbit
+word.join()- soedenit
+word.replace()-zamenit
+print(word[::-1])-perevernyt
+!!!КОРТЕЖИ/TUPLE!!!
+!!!СЛОВАРЬ/dict!!!
+country={'code': 'KZ', 'name': 'Kazakhstan', 'population': 20}
+print(country['name'])-vyvodit 'name'-'kazakhstan'
+print(country.items())=vyvodit znachenia 
+for key, value in country.items();
+  print(key, '-', value)- perebirae, i kluch i znachenie, i potom vyvodim
+
+country={'code': 'KZ', 'name': 'Kazakhstan', 'population': 20}
+country.pop('name')
+print(country)
+country.popitem()-udalyaet poslednii element
+print(country.values())- vyvodit znechenia
+print(country.items())-vyvodit i klych i znachenia i kazhdyi element('code':'KZ')- eto opredelennyi kortezh
+country.update()\country['name']='None'-menyaesh znachenie
+a={
+    'user_1':{
+        'name':'Lena',
+        'sec name':'Tursyn',
+        'age':28,
+        'adress':('Almaty','Orbita-1','98')-mozho sozdavat tuple
+    }-vnutri slovarya mozhno sozdavat slovar
+}
+print(a['user_1']['adress'])-tak printuemm adress
+!!!SET/FROZENSET!!!
+data=set('hello')-tak tozhe mozhno
+data={5,7,6,3,4,7}- i tak
+data.add(32)-dobavlyaet
+data.update('32',True,4,3,7)-dobavlyaet neskolko elementov
+data.remove(True)-udalyaet True
+data.pop()-ud. pervyi element
+data.clear()-vse ud. 
+
+nums=[1,2,3,5,5,6,4,3,3]
+a=set(nums)
+print(a)-udalyaet povtorenia
+//frozenset
+Кароче это кортежи в сет тоесть имеют и раюотает так ж ено изменять их нельзя
+Пример
+nums=[1,2,3,5,5,6,4,3,3]
+print(nums)//1,2,3,5,6,4 
+
+!!!def, lambda!!!
+
+# def test(word):
+#     print(word,end='\n')
+#     print('homie')
+
+# test(5)
+# test(True)
+# test('wussup')
+
+# def test(a,b):
+#     l=a+b
+#     print(l)
+# test(5,7)
+# test("LO",'X')
+
+# def test(a,b):
+#     l=a+b
+#     return l
+#     return a+b- tozhe mozhno
+# l=test(5,7)
+# print(l)
+# print( test("LO",'X'))
+# Practice
+def mini(l):
+    mn=l[0]
+    for i in l:
+        if i<mn:
+            mn=i
+    return mn
+
+num1=[45,3,5,34,6,2]
+min1=mini(num1)
+print(mini(num1))
+num2=[12,3,1,2,5,7,42]
+min2=mini(num2)
+print(mini(num2))
+
+if min1<min2:
+    print(min1)
+else:
+    print(min2)
+
+# lambda func
+a= lambda x,y: x*y
+print(a(5,9))
